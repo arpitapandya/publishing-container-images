@@ -7,7 +7,7 @@ RUN apk add --update \
     vim
 
 COPY simple.py /user/local/bin
-RUN chmod +x /user/local/bin/simple.py
+RUN chmod +x /usr/local/bin/simple.py
 
 ENTRYPOINT ["/user/local/bin/simple.py"]
 CMD [ "/bin/bash" ]
